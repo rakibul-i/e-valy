@@ -1,0 +1,26 @@
+li {
+    list-style: none;
+    display: inline-block;
+}
+.navigation__ul a {
+    color: white;
+    margin-right: 16px;
+    padding: 13px 26px;
+}
+
+.navigation {
+    background: #020202d6;
+    color: white;
+}
+.navigation__nav{
+    width:100%;
+}
+.navigation__ul{
+    width: 100%;
+    padding: 12px 0;
+}
+.active{
+    background: #c9151b;
+    font-size: 19px;
+    font-weight:700;
+}

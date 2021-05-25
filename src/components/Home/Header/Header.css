@@ -1,0 +1,41 @@
+.search__input{
+    display:flex;
+    width: 100%;
+    border: 2px solid #c9151b;
+    border-radius:5px;
+}
+button.search__btn {
+    background: #c9151b;
+    border: none;
+    color: white;
+}
+
+button.search__btn svg {
+    font-size: 21px;
+}
+
+input.input__bar.form-control {
+    border: none;
+    padding: 1px 13px;
+    border-radius: inherit;
+}
+
+a.user__info__icon {
+    color: #000000b8;
+    font-size:18px;
+    padding: 0 23px;
+}
+
+.user__infor{
+    display: flex !important;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding-left: 72px;
+    height: 100%;
+}
+
+.user__info{
+    position: relative;
+    right:0;
+}

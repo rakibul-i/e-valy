@@ -1,0 +1,14 @@
+.topHeader__icon{
+    margin-right: 3px;
+    font-size:19px;
+    font-weight: 100;
+    color:rgb(177, 14, 14);
+}
+.top__header{
+    background: rgba(173, 216, 230, 0.137);
+    border: 1px solid rgba(211, 211, 211, 0.644);
+    padding: 4px 0;
+}
+.top__header span{
+    font-size:13px;
+}

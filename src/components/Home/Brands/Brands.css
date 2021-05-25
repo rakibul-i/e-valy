@@ -1,0 +1,20 @@
+.brands {
+    background: #c9151b;
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+    /* margin-top: 11px; */
+    font-size: 17px;
+    padding: 11px 16px;
+}
+.brands:hover{
+    text-decoration:none;
+    color: #fff;
+}
+.card.brand__card {
+    padding: 5px 25px;
+    border: none;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 1px 1px 8px 0px lightgrey;
+}

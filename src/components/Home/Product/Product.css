@@ -1,0 +1,20 @@
+p.product__name {
+    font-size: 11px;
+}
+
+.card.product__detail {
+    border: none;
+    box-shadow: 1px 1px 10px lightgrey;
+    margin: 10px 0;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: gray;
+}
+.product__image {
+    padding: 8px;
+    margin-bottom: 15px;
+    transition:padding .5s;
+}
+.product__image:hover{
+    padding: 0px;
+}
