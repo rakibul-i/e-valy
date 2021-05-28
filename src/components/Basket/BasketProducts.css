@@ -1,0 +1,29 @@
+.row.basket__products {
+    background: white;
+    border-radius: 5px;
+    padding: 14px 0px;
+    box-shadow: 0px 1px 1px #d3d3d38a;
+}
+button.increase {
+    border: none;
+    color: black;
+    margin-right: 20px;
+}
+
+button.decrease {
+    border: none;
+    margin: 0 17px;
+}
+h5.quantity {
+    font-size: 17px;
+    padding-top: 6px;
+}
+a.Checkout {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 10px 35px;
+    color: white;
+    background: #c9151b;
+}

@@ -7,8 +7,10 @@ import { FiShoppingBag } from 'react-icons/fi';
 import { RiNotification2Line } from 'react-icons/ri';
 import { FiMessageSquare } from 'react-icons/fi';
 import { BiUser } from 'react-icons/bi';
+import {  useStateValue } from '../../contextAPI/StateProvider';
 
 const Header = () => {
+    const [{basket}] = useStateValue();
     return (
         <div className="header__main">
             <div className="w-75 mx-auto header__main__container">
@@ -24,7 +26,7 @@ const Header = () => {
                 </div>
                 <div className="user__info col-lg-3 col-md-4 col-2 d-md-block d-none">
                 <div className="user__infor">
-                <Link className="user__info__icon" to="/basket"><FiShoppingBag/></Link>
+                <Link className="user__info__icon baske__icon d-flex" to="/basket"><FiShoppingBag/>{basket && basket.length > 0 ? <sup className="superscript">{basket.length}</sup>: <sup></sup> }</Link>
                 <Link className="user__info__icon" to="/"><RiNotification2Line/></Link>
                 <Link className="user__info__icon" to="/"><FiMessageSquare/></Link>
                 <Link className="user__info__icon" to="/login"><BiUser/></Link>

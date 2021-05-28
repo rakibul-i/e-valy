@@ -1,0 +1,32 @@
+.pd__details {
+    background: white;
+    box-shadow: 0px 0px 1px lightgrey;
+    padding: 54px 0;
+    border-radius: 5px;
+}
+.pd_-details__img {
+    margin: auto;
+    width: 443px;
+    padding: 0px 61px;
+}
+button.addToCart {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 10px 35px;
+    color: white;
+    background: #c9151b;
+}
+svg.shopping__icon {
+    font-weight: 600;
+    font-size: 23px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+svg.checkMark {
+    color: green;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 6px;
+}

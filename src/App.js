@@ -6,6 +6,11 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
 import HeaderMain from './components/Home/HeaderMain/HeaderMain';
+import ProductsDetails from './components/productDetails/ProductsDetails';
+import Footer from './components/Home/Footer/Footer';
+import BasketProducts from './components/Basket/BasketProducts';
+import Shops from './components/Shops/Shops';
+import GiftCard from './components/giftCard/GiftCard';
 
 function App() {
   return (
@@ -16,13 +21,18 @@ function App() {
           <h3>Login</h3>
         </Route>
         <Route path="/basket">
-          <h1>Hello basket</h1>
+          <HeaderMain/>
+          <BasketProducts/>
         </Route>
         <Route path="/shops">
-          <h1>Hello shops</h1>
+          <HeaderMain/>
+          <Shops/>
+          <Footer/>
         </Route>
         <Route path="/giftCard">
-          <h1>Hello giftCard</h1>
+        <HeaderMain/>
+        <GiftCard/>
+        <Footer/>
         </Route>
         <Route path="/campaigns">
           <h1>Hello campaigns</h1>
@@ -38,7 +48,8 @@ function App() {
         </Route>
         <Route path="/:Id">
           <HeaderMain/>
-          <h1>Hello id</h1>
+          <ProductsDetails/>
+          <Footer/>
         </Route>
         <Route exact path="/">
           <Home/>

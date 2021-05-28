@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import fakeData from '../../../fakeData/index'
 import Product from '../Product/Product';
 const Products = () => {
-    const fakedata = fakeData.slice(0, 12);
+    const fakedata = fakeData.slice(0, 28);
     
     return (
         <div className="Products__container">
             <div className="w-75 mx-auto">
             <div className="d-flex my-2 p-y-2 justify-content-between align-items-center">
             <h3 className="my-3 pt-2">Products</h3>
-            <Link to="/allProducts " className="brands" >View All</Link>
+            {/* <Link to="/allProducts " className="brands" >View All</Link> */}
             </div>
             <div className="row py-3">
                {

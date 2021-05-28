@@ -1,0 +1,63 @@
+.footer__main {
+    background: rgb(51, 62, 79);
+    color: rgb(156, 169, 190);
+    padding: 17px 0;
+}
+.footer__section p{
+    margin-bottom:3px;
+}
+.google__paly {
+    display: flex;
+    background: black;
+    color: white;
+    width: 140px;
+    border-radius: 7px;
+    border: 1px solid #d3d3d39e;
+}
+
+.google__icon {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.footer__icon {
+    font-size: 40px;
+    margin-left: 2px;
+}
+
+.google__info {
+    line-height: 1;
+}
+p.footer__para {
+    margin: 0;
+    padding: 9px 4px;
+    line-height: 17px;
+}
+svg.facebook {
+    font-size: 40px;
+    background: #1e1e74;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+svg.instagram {
+    font-size: 40px;
+    background: #5f1313;
+    padding: 5px;
+    margin: 0 3px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+svg.youtube {
+    font-size: 40px;
+    background: #9f0000;
+    padding: 6px;
+    margin-left: 8px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+}

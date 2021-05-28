@@ -1,20 +1,21 @@
-li {
-    list-style: none;
-    display: inline-block;
+a.nav-link {
+    color: white !important;
+    margin-right: 38px;
+    border-radius: 30px;
+    padding: 5px 39px;
 }
-.navigation__ul a {
-    color: white;
-    margin-right: 16px;
-    padding: 13px 26px;
+a.nav-link:hover {
+    text-decoration: underline;
 }
-
+nav.navbar.navbar-expand-lg.navbar-light {
+    margin: 0;
+    padding: 0;
+}
 .navigation {
     background: #020202d6;
     color: white;
 }
-.navigation__nav{
-    width:100%;
-}
+
 .navigation__ul{
     width: 100%;
     padding: 12px 0;
@@ -23,4 +24,17 @@ li {
     background: #c9151b;
     font-size: 19px;
     font-weight:700;
+    color: rgba(255, 255, 255, 0.815) !important;
+    margin-right: 16px;
+    padding: 13px 26px;
+}
+button.navbar-toggler.collapsed {
+    background: #c9151b;
+    color: white !important;
+}
+.navbar-light .navbar-toggler {
+    background: #c9151b;
+    /* color: rgba(0,0,0,.5); */
+    border-color: rgba(0,0,0,.1);
+    color: white !important;
 }

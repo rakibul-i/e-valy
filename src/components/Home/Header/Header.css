@@ -39,3 +39,14 @@ a.user__info__icon {
     position: relative;
     right:0;
 }
+sup.superscript {
+    /* font-weight: 600; */
+    font-size: 11px;
+    padding: 8px 5px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #c9151b;
+}
+sup.superscript:hover{
+    text-decoration: none;
+}
