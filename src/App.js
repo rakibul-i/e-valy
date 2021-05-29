@@ -11,14 +11,23 @@ import Footer from './components/Home/Footer/Footer';
 import BasketProducts from './components/Basket/BasketProducts';
 import Shops from './components/Shops/Shops';
 import GiftCard from './components/giftCard/GiftCard';
+import SignUp from './components/Firebase/Signup/SignUp';
+import { AuthProvider } from './components/Firebase/contexts/AuthContext';
+import Login from './components/Firebase/Login/Login';
 
 function App() {
   return (
     <div className="App">
     <Router>
+        <AuthProvider>
       <Switch>
+        <Route path="/signup">
+        <HeaderMain/>
+        <SignUp/>
+        </Route>
         <Route path="/login">
-          <h3>Login</h3>
+        <HeaderMain/>
+        <Login/>
         </Route>
         <Route path="/basket">
           <HeaderMain/>
@@ -55,6 +64,7 @@ function App() {
           <Home/>
         </Route>
       </Switch>
+      </AuthProvider>
     </Router>
     </div>
   );

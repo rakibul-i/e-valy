@@ -24,12 +24,12 @@ const Header = () => {
                     <button className="search__btn px-lg-5 px-md-3 px-2"> <BiSearchAlt2/> </button>
                    </div>
                 </div>
-                <div className="user__info col-lg-3 col-md-4 col-2 d-md-block d-none">
+                <div className="user__info col-lg-3 col-md-4 col-12 d-md-block ">
                 <div className="user__infor">
                 <Link className="user__info__icon baske__icon d-flex" to="/basket"><FiShoppingBag/>{basket && basket.length > 0 ? <sup className="superscript">{basket.length}</sup>: <sup></sup> }</Link>
                 <Link className="user__info__icon" to="/"><RiNotification2Line/></Link>
                 <Link className="user__info__icon" to="/"><FiMessageSquare/></Link>
-                <Link className="user__info__icon" to="/login"><BiUser/></Link>
+                <Link className="user__info__icon" to="/signup"><BiUser/></Link>
                 </div>
                 </div>
             </div>

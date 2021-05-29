@@ -1,6 +1,7 @@
 
 body {
   margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
   background-color: #F7F8FA;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
