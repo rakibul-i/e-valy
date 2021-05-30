@@ -1,0 +1,11 @@
+button.google__btn.btn {
+    border: 1px solid lightgray;
+    padding: 6px 24px;
+    border-radius: 30px;
+}
+
+svg.google__logo {
+    font-size: 25px;
+    margin-right: 3px;
+    margin-bottom: 4px;
+}

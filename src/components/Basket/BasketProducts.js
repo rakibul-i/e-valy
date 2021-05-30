@@ -8,9 +8,9 @@ import './BasketProducts.css';
 
 const BasketProducts = () => {
     const [{basket}] = useStateValue();
-    console.log(basket);
     const totalPrice = basket?.reduce((amount, product) => product.price * product.count + amount, 0 );
-    const subtotal = Math.floor(totalPrice);
+    
+    
     return (
         <div className="basket__container">
             <div className="w-75 mx-auto my-5">
@@ -42,7 +42,7 @@ const BasketProducts = () => {
                    <h1 className="subtotal">Subtotal</h1>
                     <p>items: {basket.length} </p>
                     <hr />
-                    <div> <small>Total: $</small><strong>{subtotal }</strong>  </div>
+                    <div> <small>Total: $</small><strong>{totalPrice }</strong>  </div>
                     <div className="my-5">
                     <Link to="/checkout" className="Checkout mt-4" >Proceed To CheckOut</Link>
                     </div>

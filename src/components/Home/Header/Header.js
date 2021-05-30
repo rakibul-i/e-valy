@@ -29,7 +29,7 @@ const Header = () => {
                 <Link className="user__info__icon baske__icon d-flex" to="/basket"><FiShoppingBag/>{basket && basket.length > 0 ? <sup className="superscript">{basket.length}</sup>: <sup></sup> }</Link>
                 <Link className="user__info__icon" to="/"><RiNotification2Line/></Link>
                 <Link className="user__info__icon" to="/"><FiMessageSquare/></Link>
-                <Link className="user__info__icon" to="/signup"><BiUser/></Link>
+                <Link className="user__info__icon" to="/login"><BiUser/></Link>
                 </div>
                 </div>
             </div>

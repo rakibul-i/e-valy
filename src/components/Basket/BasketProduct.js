@@ -19,7 +19,7 @@ const BasketProduct = (props) => {
     
     return (
         <>
-            <div className="row">
+            <div className="row single__product py-4">
                 <div className="col-lg-3 col-md-3 col-4">
                     <img src={img} className="img-fluid" alt="" />
                 </div>

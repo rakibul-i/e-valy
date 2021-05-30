@@ -11,28 +11,32 @@ import Footer from './components/Home/Footer/Footer';
 import BasketProducts from './components/Basket/BasketProducts';
 import Shops from './components/Shops/Shops';
 import GiftCard from './components/giftCard/GiftCard';
-import SignUp from './components/Firebase/Signup/SignUp';
-import { AuthProvider } from './components/Firebase/contexts/AuthContext';
-import Login from './components/Firebase/Login/Login';
+import GoogleLogin from './components/Firebase/Google/GoogleLogin';
+import PrivetRoute from './components/Firebase/privetRoute/PrivetRoute';
+import { createContext, useState } from 'react';
+import Checkout from './components/Order/checkout/Checkout';
+
+export const UserContext = createContext();
 
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState();
   return (
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
     <div className="App">
     <Router>
-        <AuthProvider>
       <Switch>
-        <Route path="/signup">
-        <HeaderMain/>
-        <SignUp/>
-        </Route>
         <Route path="/login">
         <HeaderMain/>
-        <Login/>
+        <GoogleLogin/>
         </Route>
         <Route path="/basket">
           <HeaderMain/>
           <BasketProducts/>
         </Route>
+        <PrivetRoute path="/checkout">
+          <HeaderMain/>
+          <Checkout/>
+        </PrivetRoute>
         <Route path="/shops">
           <HeaderMain/>
           <Shops/>
@@ -64,9 +68,9 @@ function App() {
           <Home/>
         </Route>
       </Switch>
-      </AuthProvider>
     </Router>
     </div>
+    </UserContext.Provider>
   );
 }
 

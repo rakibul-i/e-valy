@@ -4,14 +4,19 @@
     padding: 14px 0px;
     box-shadow: 0px 1px 1px #d3d3d38a;
 }
-button.increase {
-    border: none;
+button.increase {   
+     border: none;
+    font-size: 22px;
+    padding: 0 10px;
     color: black;
     margin-right: 20px;
 }
 
 button.decrease {
     border: none;
+   font-size: 22px;
+   padding: 0 10px;
+   color: black;
     margin: 0 17px;
 }
 h5.quantity {
