@@ -16,10 +16,18 @@ const GoogleLogin = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     
     let history = useHistory();
-   let location = useLocation();
-   let { from } = location.state || { from: { pathname: "/" } };
+    let location = useLocation();
+    let { from } = location.state || { from: { pathname: "/" } };
 
     const [user, setUser] = useState({});
+
+    const setUserToken = () => {
+        firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function(idToken) {
+            sessionStorage.setItem('token', idToken);
+          }).catch(function(error) {
+            // Handle error
+          });
+    }
     const googleSignIn = () => {
         var googleProvider = new firebase.auth.GoogleAuthProvider();
 
@@ -33,6 +41,7 @@ const GoogleLogin = () => {
             };
             setUser(currentUser);
             setLoggedInUser(currentUser);
+            setUserToken();
             history.replace(from);
         }).catch((error) => {
             var errorMessage = error.message;
