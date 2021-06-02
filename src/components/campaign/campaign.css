@@ -1,0 +1,10 @@
+.campaign__card {
+    background: white;
+    padding: 22px 0;
+    text-align: center;
+    box-shadow: 0px 0px 3px lightgrey;
+}
+
+.campaign__image {
+    margin-bottom: 14px;
+}

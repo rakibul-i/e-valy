@@ -15,6 +15,7 @@ import GoogleLogin from './components/Firebase/Google/GoogleLogin';
 import PrivetRoute from './components/Firebase/privetRoute/PrivetRoute';
 import { createContext, useState } from 'react';
 import Checkout from './components/Order/checkout/Checkout';
+import Campaign from './components/campaign/Campaign';
 
 export const UserContext = createContext();
 
@@ -48,16 +49,17 @@ function App() {
         <Footer/>
         </Route>
         <Route path="/campaigns">
-          <h1>Hello campaigns</h1>
+          <HeaderMain/>
+          <Campaign/>
+          <Footer/>
         </Route>
         <Route path="/express">
-          <h1>Hello express</h1>
+          <HeaderMain/>
+          <h1 className="text-center mt-5">Express comming soon</h1>
         </Route>
         <Route path="/cyclone">
-          <h1>Hello cyclone</h1>
-        </Route>
-        <Route path="/allProducts">
-          <h4>Hello all products</h4>
+          <HeaderMain/>
+          <h1 className="text-center mt-5">Cyclone comming soon</h1>
         </Route>
         <Route path="/:Id">
           <HeaderMain/>
