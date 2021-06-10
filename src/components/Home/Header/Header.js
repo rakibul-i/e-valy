@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../../images/logo.png';
 import './Header.css'
 import { BiSearchAlt2 } from 'react-icons/bi';
 import { FiShoppingBag } from 'react-icons/fi';

@@ -19,7 +19,7 @@ const ProductDetail = (props) => {
     };
 
     const [{basket}, dispatch] = useStateValue();
-
+    const index =basket.find(item => item.key === key );
 
         const addToBasket = () => {
             dispatch({
@@ -61,7 +61,7 @@ const ProductDetail = (props) => {
                             <h5 className="quantity">{count}</h5>
                             <button onClick={decrease} className="decrease ">-</button>
                     </div>
-                    <button onClick={addToBasket} className="addToCart"> <FiShoppingCart className="shopping__icon"/> Add to Basket</button>
+                    {index?.key ? <p>Product added on the basket </p> : <button onClick={addToBasket} className="addToCart"> <FiShoppingCart className="shopping__icon"/> Add to Basket</button> }
                  </div>
              </div>
             </div>
