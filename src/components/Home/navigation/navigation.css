@@ -21,7 +21,7 @@ nav.navbar.navbar-expand-lg.navbar-light {
     padding: 12px 0;
 }
 .active{
-    background: #c9151b;
+    background: #8bc34a;
     font-size: 19px;
     font-weight:700;
     border-radius: 4px;
@@ -30,11 +30,11 @@ nav.navbar.navbar-expand-lg.navbar-light {
     padding: 12px 26px;
 }
 button.navbar-toggler.collapsed {
-    background: #c9151b;
+    background: #8bc34a;
     color: white !important;
 }
 .navbar-light .navbar-toggler {
-    background: #c9151b;
+    background: #8bc34a;
     /* color: rgba(0,0,0,.5); */
     border-color: rgba(0,0,0,.1);
     color: white !important;

@@ -16,7 +16,7 @@ const Header = () => {
             <div className="w-75 mx-auto header__main__container">
             <div className="row py-4">
                 <div className="col-lg-1 col-md-2 col-3 d-flex align-items-center">
-                   <Link to="/"> <img src={logo} className="img-fluid" alt="" /></Link>
+                   <Link to="/"> <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_8dfd1a922e19ef6ffc78a2bbe094855c/shopify.png" className="img-fluid" alt="" /></Link>
                 </div>
                 <div className="search__bar col-lg-8 col-md-6 col-9 ">
                    <div className="search__input">
