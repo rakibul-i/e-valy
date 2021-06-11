@@ -1,8 +1,10 @@
 import {CardElement, useStripe, useElements} from '@stripe/react-stripe-js';
 import { useState } from 'react';
+import { useStateValue } from '../../contextAPI/StateProvider';
 import './payment.css';
 
 const SimpleCardForm = () => {
+  const [{basket}] = useStateValue();
   const stripe = useStripe();
   const elements = useElements();
 
@@ -29,6 +31,7 @@ const SimpleCardForm = () => {
       setPaymentSuccess(null);
     } else {
       setPaymentSuccess(paymentMethod.id);
+      
       setPaymentError(null)
     }
   };
@@ -39,14 +42,15 @@ const SimpleCardForm = () => {
       paymentError && <p className="text-danger">{paymentError}</p>
     }
     {
-      paymentSuccess && <p className="text-success">Your payment was successfull. Your payment id '{paymentSuccess}'</p>
-    }
-      <form onSubmit={handleSubmit}>
+      paymentSuccess ? <p className="text-success">Your payment was successfull. Your payment id '{paymentSuccess}' </p> : (
+        <form onSubmit={handleSubmit}>
         <CardElement />
-        <button className="payBTn" type="submit" disabled={!stripe}>
+        <button className="payBTn mt-3" type="submit" disabled={!stripe}>
           Pay
         </button>
     </form>
+      )
+    }
     
     </div>
   );
