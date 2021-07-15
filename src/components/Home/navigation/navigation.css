@@ -20,7 +20,7 @@ nav.navbar.navbar-expand-lg.navbar-light {
     width: 100%;
     padding: 12px 0;
 }
-.active{
+#active{
     background: #8bc34a;
     font-size: 19px;
     font-weight:700;
